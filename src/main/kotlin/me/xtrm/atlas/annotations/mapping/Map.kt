@@ -23,7 +23,7 @@ import kotlin.annotation.AnnotationTarget.*
 /**
  * Used to annotate a mapped name.
  *
- * @param value The possible names for this member.
+ * @param names The possible names for this member.
  * @param asRegex Whether the values be treated as a regular expression.
  * @param memberType Which member type this mapping corresponds to.
  *                   By default, AFW will try to deduct the member
@@ -35,7 +35,7 @@ import kotlin.annotation.AnnotationTarget.*
 @Retention(RUNTIME)
 @Target(CLASS, FUNCTION, PROPERTY, PROPERTY_GETTER, PROPERTY_SETTER, FIELD, TYPE)
 annotation class Map(
-    vararg val value: String,
+    @get:JvmName("value") vararg val names: String,
     val asRegex: Boolean = false,
     val memberType: MemberType = MemberType.OTHER,
 )

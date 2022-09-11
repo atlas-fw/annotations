@@ -11,7 +11,7 @@ object Plugins {
 object Dependencies {
     const val KOTLIN = kotlinVersion
 
-    val kotlinModules = arrayOf("stdlib", "reflect")
+    val kotlinModules = arrayOf("stdlib")
 }
 
 object Repositories {

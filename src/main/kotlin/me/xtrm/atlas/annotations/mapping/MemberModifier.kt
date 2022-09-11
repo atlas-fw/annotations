@@ -17,15 +17,11 @@
 
 package me.xtrm.atlas.annotations.mapping
 
-import kotlin.annotation.AnnotationRetention.RUNTIME
-import kotlin.annotation.AnnotationTarget.*
-
 /**
- * Used to annotate static members.
- *
  * @author xtrm
  * @since 0.0.1
  */
-@Retention(RUNTIME)
-@Target(FIELD, FUNCTION, PROPERTY, PROPERTY_GETTER, PROPERTY_SETTER, FIELD, TYPE)
-annotation class Static
+enum class MemberModifier {
+    STATIC,
+    FINAL,
+}

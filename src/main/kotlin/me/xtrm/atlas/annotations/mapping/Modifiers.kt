@@ -21,11 +21,11 @@ import kotlin.annotation.AnnotationRetention.RUNTIME
 import kotlin.annotation.AnnotationTarget.*
 
 /**
- * Used to annotate final members.
- *
  * @author xtrm
  * @since 0.0.1
  */
 @Retention(RUNTIME)
 @Target(FIELD, FUNCTION, PROPERTY, PROPERTY_GETTER, PROPERTY_SETTER, FIELD, TYPE)
-annotation class Final
+annotation class Modifiers(
+    @get:JvmName("value") vararg val modifiers: MemberModifier = [],
+)
