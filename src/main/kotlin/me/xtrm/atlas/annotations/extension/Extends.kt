@@ -29,11 +29,13 @@ import kotlin.reflect.KClass
  * ```java
  * package my.pkg;
  *
- * // Stub
+ * // Stubs
+ * import net.minecraft.client.gui.GuiButton;
  * import net.minecraft.client.gui.GuiScreen;
  *
  * public class GuiProxy extends GuiScreen {
  *     private final int value;
+ *
  *     public GuiProxy(int value) {
  *         super("string constructor value");
  *
@@ -53,7 +55,9 @@ import kotlin.reflect.KClass
  * ```java
  * package my.pkg;
  *
+ * import me.xtrm.atlas.annotations.extension.*;
  * import me.xtrm.atlas.api.client.gui.GuiScreen;
+ * import me.xtrm.atlas.runtime.AtlasRuntime;
  *
  * @Extends(GuiScreen.class)
  * public abstract class GuiProxy {
@@ -62,12 +66,14 @@ import kotlin.reflect.KClass
  *
  *     private final int value;
  *
- *     @ExtensionSpecial(target = "superConstructor")
+ *     @ExtensionSpecial(target = ExtensionSpecialPoint.SUPER_CONSTRUCTOR)
  *     private final void _superConstructor(String arg1) {
+ *         throw new LinkageError("Generated stub method.")
  *     }
  *
- *     @ExtensionSpecial(target = "constructor")
+ *     @ExtensionSpecial(target = ExtensionSpecialPoint.SUPER_CONSTRUCTOR)
  *     public void constructor(int value) {
+ *         // This call will be replaced to a call to super constructor
  *         _superConstructor("string constructor value");
  *
  *         this.value = value;
@@ -77,7 +83,11 @@ import kotlin.reflect.KClass
  *     public void initGui() {
  *         ((GuiScreen) _SELF).initGui();
  *
- *         ((GuiScreen) _SELF).getButtonList().add(new GuiButton(1, 20, 20, "Cool text bro"));
+ *         ((GuiScreen) _SELF).getButtonList().add(
+ *                 // this syntax isn't final, just for representation purposes.
+ *                 AtlasRuntime.proxyBuilder(GuiButton.class)
+ *                         .construct(1, 20, 20, "Cool text bro")
+ *         );
  *     }
  * }
  * ```
