@@ -27,5 +27,5 @@ import kotlin.annotation.AnnotationTarget.*
 @Retention(RUNTIME)
 @Target(FIELD, FUNCTION, PROPERTY, PROPERTY_GETTER, PROPERTY_SETTER, FIELD, TYPE)
 annotation class Modifiers(
-    @get:JvmName("value") vararg val modifiers: MemberModifier = [],
+    @get:JvmName("value") val modifiers: Int,
 )

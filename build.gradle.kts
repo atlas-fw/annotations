@@ -33,7 +33,7 @@ val sourceVersion = "1.8"
 dependencies {
     with(Dependencies) {
         kotlinModules.forEach {
-            implementation("org.jetbrains.kotlin", "kotlin-$it", KOTLIN)
+            api("org.jetbrains.kotlin", "kotlin-$it", KOTLIN)
         }
         testImplementation("org.jetbrains.kotlin", "kotlin-test", KOTLIN)
     }
