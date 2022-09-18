@@ -15,13 +15,19 @@
  * along with annotations.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package me.xtrm.atlas.annotations.mapping
+package me.xtrm.atlas.annotations.extension
+
+import kotlin.reflect.KClass
 
 /**
+ *
+ *
+ * @see Extends
+ *
  * @author xtrm
  * @since 0.0.1
  */
-enum class MemberModifier {
-    STATIC,
-    FINAL,
-}
+annotation class ExtensionMember(
+    @get:JvmName("value") val member: String,
+    vararg val source: KClass<*>,
+)
