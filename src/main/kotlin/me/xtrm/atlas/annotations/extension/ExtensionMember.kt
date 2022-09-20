@@ -20,7 +20,9 @@ package me.xtrm.atlas.annotations.extension
 import kotlin.reflect.KClass
 
 /**
+ * Represents a foreign member that's to be replaced by the annotation target.
  *
+ * TODO: better documentation
  *
  * @see Extends
  *

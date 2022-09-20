@@ -32,6 +32,7 @@ import kotlin.reflect.KClass
  * // Stubs
  * import net.minecraft.client.gui.GuiButton;
  * import net.minecraft.client.gui.GuiScreen;
+ * import net.minecraft.client.Minecraft;
  *
  * public class GuiProxy extends GuiScreen {
  *     private final int value;
@@ -48,6 +49,10 @@ import kotlin.reflect.KClass
  *
  *         this.buttonList.add(new GuiButton(1, 20, 20, "Cool text bro"));
  *     }
+ *
+ *     public static void display() {
+ *         Minecraft.getMinecraft().displayGuiScreen(new GuiProxy(123));
+ *     }
  * }
  * ```
  *
@@ -57,24 +62,24 @@ import kotlin.reflect.KClass
  *
  * import me.xtrm.atlas.annotations.extension.*;
  * import me.xtrm.atlas.api.client.gui.GuiScreen;
+ * import me.xtrm.atlas.api.client.MinecraftClient;
  * import me.xtrm.atlas.runtime.AtlasRuntime;
  *
  * @Extends(GuiScreen.class)
  * public abstract class GuiProxy {
  *     // Generated
+ *     private static final MinecraftClient _STATIC_MinecraftClient =
+ *             AtlasRuntime.requireStatic(MinecraftClient.class);
  *     private final Object _SELF;
  *
  *     private final int value;
  *
- *     @ExtensionSpecial(target = ExtensionSpecialPoint.SUPER_CONSTRUCTOR)
- *     private final void _superConstructor(String arg1) {
- *         throw new LinkageError("Generated stub method.")
- *     }
- *
- *     @ExtensionSpecial(target = ExtensionSpecialPoint.SUPER_CONSTRUCTOR)
- *     public void constructor(int value) {
+ *     public GuiProxy(int value) {
  *         // This call will be replaced to a call to super constructor
- *         _superConstructor("string constructor value");
+ *         AtlasRuntime.superConstruct(
+ *             "(Ljava/lang/String;)V",
+ *             new Object[] {"string constructor value"}
+ *         );
  *
  *         this.value = value;
  *     }
@@ -87,6 +92,18 @@ import kotlin.reflect.KClass
  *                 // this syntax isn't final, just for representation purposes.
  *                 AtlasRuntime.proxyBuilder(GuiButton.class)
  *                         .construct(1, 20, 20, "Cool text bro")
+ *         );
+ *     }
+ *
+ *     public static void display() {
+ *         // Automatically stored locally once
+ *         // TODO(@xtrm-en): maybe add a toggle to this transpiler behavior?
+ *         MinecraftClient _VIRTUAL_MinecraftClient1 =
+ *                 _STATIC_MinecraftClient.getMinecraft();
+ *
+ *         _VIRTUAL_MinecraftClient1.displayGuiScreen(
+ *                 AtlasRuntime.proxyBuilder(GuiProxy.class)
+ *                         .construct(123)
  *         );
  *     }
  * }
