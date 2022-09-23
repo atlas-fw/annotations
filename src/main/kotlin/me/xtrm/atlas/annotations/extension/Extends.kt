@@ -1,5 +1,8 @@
 package me.xtrm.atlas.annotations.extension
 
+import kotlin.annotation.AnnotationRetention.RUNTIME
+import kotlin.annotation.AnnotationTarget.CLASS
+import kotlin.annotation.AnnotationTarget.TYPE
 import kotlin.reflect.KClass
 
 /**
@@ -97,6 +100,8 @@ import kotlin.reflect.KClass
  * @author xtrm
  * @since 0.0.1
  */
+@Target(TYPE, CLASS)
+@Retention(RUNTIME)
 annotation class Extends(
     @get:JvmName("value") vararg val classes: KClass<*>
 )

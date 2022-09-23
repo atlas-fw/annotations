@@ -1,5 +1,7 @@
 package me.xtrm.atlas.annotations.stub
 
+import kotlin.annotation.AnnotationRetention.RUNTIME
+import kotlin.annotation.AnnotationTarget.*
 import kotlin.reflect.KClass
 
 /**
@@ -31,8 +33,8 @@ import kotlin.reflect.KClass
  * @see me.xtrm.atlas.annotations.mapping.Map
  * @since 0.0.1
  */
-@Target(AnnotationTarget.TYPE, AnnotationTarget.CLASS)
-@Retention(AnnotationRetention.RUNTIME)
+@Target(FIELD, FUNCTION, PROPERTY, PROPERTY_GETTER, PROPERTY_SETTER, FIELD, TYPE, CLASS)
+@Retention(RUNTIME)
 annotation class StubSource(
     @get:JvmName("value") vararg val classes: KClass<*>,
     val member: String = ""
