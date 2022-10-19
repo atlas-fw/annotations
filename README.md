@@ -2,29 +2,46 @@
 
 # importing
 
+for now, you can use jitpack to import [annotations][project-url] into your project.
+
+<!--
 you can import [annotations][project-url] from [maven central][mvnc] just by adding it to your dependencies:
+-->
 
 ## gradle
 
 ```kotlin
 repositories {
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
-    implementation("me.xtrm.atlas:annotations:0.0.1")
+    implementation("com.github.atlas-fw:annotations:trunk-SNAPSHOT")
 }
 ```
 
 ## maven
-
 ```xml
-<dependency>
-    <groupId>me.xtrm.atlas</groupId>
-    <artifactId>annotations</artifactId>
-    <version>0.0.1</version>
-</dependency>
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
 ```
+```xml
+<dependencies>
+    <dependency>
+        <groupId>com.github.atlas-fw</groupId>
+        <artifactId>annotations</artifactId>
+        <version>trunk-SNAPSHOT</version>
+    </dependency>
+</dependencies>
+```
+
+**Note**: *dependency on jitpack is temporary and will be replaced at some point with either Maven Central or our own 
+public repositories.*
 
 # troubleshooting
 
