@@ -75,15 +75,15 @@ import kotlin.reflect.KClass
  *         ((GuiScreen) _SELF).initGui();
  *
  *         ((GuiScreen) _SELF).getButtonList().add(
- *                 // this syntax isn't final, just for representation purposes.
+ *                 // this syntax isn't final, mainly for representation purposes for now.
  *                 AtlasRuntime.proxyBuilder(GuiButton.class)
  *                         .construct(1, 20, 20, "Cool text bro")
  *         );
  *     }
  *
  *     public static void display() {
- *         // Automatically stored locally once
- *         // TODO(@xtrm-en): maybe add a toggle to this transpiler behavior?
+ *         // Automatically stored locally once (FIXME: is it final?)
+ *         // TODO(@xtrm-en): maybe add a toggle to this compiler behavior?
  *         MinecraftClient _VIRTUAL_MinecraftClient1 =
  *                 _STATIC_MinecraftClient.getMinecraft();
  *

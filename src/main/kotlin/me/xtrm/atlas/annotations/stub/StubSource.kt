@@ -8,6 +8,10 @@ import kotlin.reflect.KClass
  * Indicates that this stub class has been generated with data
  * from the provided mapping classes.
  *
+ * Note: this behaviour can be disabled either in atlas-gradle's
+ * configuration extension or by setting the
+ * `atlas.stubborn.disableStubSource` system property to `true`.
+ *
  * For example, taking the following (kotlin) mapping class:
  * ```kotlin
  * package mappings
