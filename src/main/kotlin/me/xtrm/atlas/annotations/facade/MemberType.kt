@@ -1,4 +1,4 @@
-package me.xtrm.atlas.annotations.mapping
+package me.xtrm.atlas.annotations.facade
 
 /**
  * Enumeration of the different types of JVM class members.

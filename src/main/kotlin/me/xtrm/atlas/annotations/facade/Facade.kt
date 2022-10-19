@@ -1,14 +1,14 @@
-package me.xtrm.atlas.annotations.mapping
+package me.xtrm.atlas.annotations.facade
 
 import kotlin.annotation.AnnotationRetention.RUNTIME
 import kotlin.annotation.AnnotationTarget.*
 
 /**
- * Used to annotate a mapped name.
+ * Used to annotate a proxied member via its name.
  *
  * @param names The possible names for this member.
  * @param asRegex Whether the values be treated as a regular expression.
- * @param memberType Which member type this mapping corresponds to.
+ * @param memberType Which member type this facade corresponds to.
  *                   By default, AFW will try to deduct the member
  *                   type from the class context.
  *
@@ -17,7 +17,7 @@ import kotlin.annotation.AnnotationTarget.*
  */
 @Retention(RUNTIME)
 @Target(CLASS, FUNCTION, PROPERTY, PROPERTY_GETTER, PROPERTY_SETTER, FIELD, TYPE)
-annotation class Map(
+annotation class Facade(
     @get:JvmName("value") vararg val names: String,
     val asRegex: Boolean = false,
     val memberType: MemberType = MemberType.OTHER,

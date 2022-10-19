@@ -30,7 +30,7 @@ import kotlin.reflect.KClass
  * }
  * ```
  *
- * @see me.xtrm.atlas.annotations.mapping.Map
+ * @see me.xtrm.atlas.annotations.facade.Facade
  * @since 0.0.1
  */
 @Target(FIELD, FUNCTION, PROPERTY, PROPERTY_GETTER, PROPERTY_SETTER, FIELD, TYPE, CLASS)

@@ -1,4 +1,4 @@
-package me.xtrm.atlas.annotations.mapping
+package me.xtrm.atlas.annotations.facade
 
 import kotlin.annotation.AnnotationRetention.RUNTIME
 import kotlin.annotation.AnnotationTarget.CONSTRUCTOR
