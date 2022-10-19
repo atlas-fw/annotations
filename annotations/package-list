@@ -1,0 +1,38 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:me.xtrm.atlas.annotations.extension////PointingToDeclaration/annotations/me.xtrm.atlas.annotations.extension/index.html
+$dokka.location:me.xtrm.atlas.annotations.extension/Extends///PointingToDeclaration/annotations/me.xtrm.atlas.annotations.extension/-extends/index.html
+$dokka.location:me.xtrm.atlas.annotations.extension/Extends/Extends/#kotlin.Array[kotlin.reflect.KClass[*]]/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.extension/-extends/-extends.html
+$dokka.location:me.xtrm.atlas.annotations.extension/Extends/classes/#/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.extension/-extends/classes.html
+$dokka.location:me.xtrm.atlas.annotations.extension/ExtensionMember///PointingToDeclaration/annotations/me.xtrm.atlas.annotations.extension/-extension-member/index.html
+$dokka.location:me.xtrm.atlas.annotations.extension/ExtensionMember/ExtensionMember/#kotlin.String#kotlin.Array[kotlin.reflect.KClass[*]]/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.extension/-extension-member/-extension-member.html
+$dokka.location:me.xtrm.atlas.annotations.extension/ExtensionMember/member/#/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.extension/-extension-member/member.html
+$dokka.location:me.xtrm.atlas.annotations.extension/ExtensionMember/source/#/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.extension/-extension-member/source.html
+$dokka.location:me.xtrm.atlas.annotations.facade////PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/Constructor///PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/-constructor/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/Constructor/Constructor/#/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/-constructor/-constructor.html
+$dokka.location:me.xtrm.atlas.annotations.facade/Facade///PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/-facade/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/Facade/Facade/#kotlin.Array[kotlin.String]#kotlin.Boolean#me.xtrm.atlas.annotations.facade.MemberType/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/-facade/-facade.html
+$dokka.location:me.xtrm.atlas.annotations.facade/Facade/asRegex/#/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/-facade/as-regex.html
+$dokka.location:me.xtrm.atlas.annotations.facade/Facade/memberType/#/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/-facade/member-type.html
+$dokka.location:me.xtrm.atlas.annotations.facade/Facade/names/#/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/-facade/names.html
+$dokka.location:me.xtrm.atlas.annotations.facade/MemberType.ANNOTATION_TYPE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}annotations/me.xtrm.atlas.annotations.facade/-member-type/-a-n-n-o-t-a-t-i-o-n_-t-y-p-e/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/MemberType.CONSTRUCTOR///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}annotations/me.xtrm.atlas.annotations.facade/-member-type/-c-o-n-s-t-r-u-c-t-o-r/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/MemberType.ENUM_CONSTANT///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}annotations/me.xtrm.atlas.annotations.facade/-member-type/-e-n-u-m_-c-o-n-s-t-a-n-t/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/MemberType.FIELD///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}annotations/me.xtrm.atlas.annotations.facade/-member-type/-f-i-e-l-d/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/MemberType.METHOD///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}annotations/me.xtrm.atlas.annotations.facade/-member-type/-m-e-t-h-o-d/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/MemberType.OTHER///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}annotations/me.xtrm.atlas.annotations.facade/-member-type/-o-t-h-e-r/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/MemberType.TYPE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}annotations/me.xtrm.atlas.annotations.facade/-member-type/-t-y-p-e/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/MemberType///PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/-member-type/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/Modifiers///PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/-modifiers/index.html
+$dokka.location:me.xtrm.atlas.annotations.facade/Modifiers/Modifiers/#kotlin.Int/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/-modifiers/-modifiers.html
+$dokka.location:me.xtrm.atlas.annotations.facade/Modifiers/modifiers/#/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.facade/-modifiers/modifiers.html
+$dokka.location:me.xtrm.atlas.annotations.stub////PointingToDeclaration/annotations/me.xtrm.atlas.annotations.stub/index.html
+$dokka.location:me.xtrm.atlas.annotations.stub/StubSource///PointingToDeclaration/annotations/me.xtrm.atlas.annotations.stub/-stub-source/index.html
+$dokka.location:me.xtrm.atlas.annotations.stub/StubSource/StubSource/#kotlin.Array[kotlin.reflect.KClass[*]]#kotlin.String/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.stub/-stub-source/-stub-source.html
+$dokka.location:me.xtrm.atlas.annotations.stub/StubSource/classes/#/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.stub/-stub-source/classes.html
+$dokka.location:me.xtrm.atlas.annotations.stub/StubSource/member/#/PointingToDeclaration/annotations/me.xtrm.atlas.annotations.stub/-stub-source/member.html
+me.xtrm.atlas.annotations.extension
+me.xtrm.atlas.annotations.facade
+me.xtrm.atlas.annotations.stub
+
